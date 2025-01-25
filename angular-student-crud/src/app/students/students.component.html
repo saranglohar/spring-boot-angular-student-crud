@@ -1,0 +1,15 @@
+<h1> Student List</h1>
+
+
+<div>
+    <div *ngFor="let student of studentsList" style="display: flex; flex-direction: row;">
+        <div style="width: 200px;">{{student.id}}</div>
+        <div  style="width: 200px;">{{student.name}}</div>
+        <div  style="width: 200px;">{{student.mark}}</div>
+        <button (click)="deleteStudent(student.id)">delete student</button>
+    </div>
+
+</div>
+
+
+<button (click)="addStudent()">add student</button>
